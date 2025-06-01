@@ -255,29 +255,29 @@
                 <h2>Get In Touch</h2>
             </div>
             <a href="mailto:chirag9111vansh@gmail.com">
-            <div class="contact-info">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>chirag9111vansh@gmail.com</p>
+                        </div>
+                    </div>
+            </a>
+            <a href="tel:+918607129425">
                 <div class="contact-item">
                     <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-phone"></i>
                     </div>
                     <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>chirag9111vansh@gmail.com</p>
+                        <h3>Phone</h3>
+                        <p>+91 8607129425</p>
                     </div>
                 </div>
             </a>
-                <a href="tel:+918607129425">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>+91 8607129425</p>
-                        </div>
-                    </div>
-                </a>
-                <a href=" https://www.linkedin.com/in/chirag-taluja-04f03/">
+            <a href=" https://www.linkedin.com/in/chirag-taluja-04f03/">
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fab fa-linkedin"></i>
@@ -288,25 +288,23 @@
 
                     </div>
                 </div>
-                </a>
+            </a>
+        </div>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="33152c0c-d118-4c60-84e8-19ccfd89a5cf">
+            <div class="form-group">
+                <input type="text" name="firstname" class="form-control" placeholder="Your Name" required>
             </div>
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
-                <!-- Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="33152c0c-d118-4c60-84e8-19ccfd89a5cf">
-                <div class="form-group">
-                    <input type="text" name="firstname" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
-                </div>
-                <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
         </div>
     </section>
 
@@ -329,6 +327,15 @@
             </div>
         </div>
     </footer>
+    <!-- Success Popup -->
+    <div id="popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <span id="closePopup" class="close-btn">&times;</span>
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting me. I’ll get back to you soon.</p>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
