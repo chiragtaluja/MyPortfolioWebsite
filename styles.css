@@ -677,12 +677,9 @@ nav ul li a:hover::after {
 
 .certification-card {
   background: var(--white);
-  padding: 30px;
   border-radius: 15px;
   box-shadow: var(--shadow);
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  overflow: hidden;
   transition: var(--transition);
 }
 
@@ -691,10 +688,24 @@ nav ul li a:hover::after {
   box-shadow: var(--shadow-hover);
 }
 
-.certification-badge {
-  font-size: 2rem;
-  color: var(--primary);
-  flex-shrink: 0;
+.certification-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.certification-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover .certification-image img {
+  transform: scale(1.05);
+}
+
+.certification-content {
+  padding: 20px;
 }
 
 .certification-content h3 {
@@ -708,6 +719,22 @@ nav ul li a:hover::after {
   color: var(--primary-light);
   margin-bottom: 10px;
   font-size: 0.9rem;
+}
+
+.view-certificate {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 15px;
+  background: var(--primary);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.view-certificate:hover {
+  background: var(--primary-dark);
 }
 
 /* Contact Section */
